@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>class 1 demo</title>
+    <style>
+        #firstItem{
+            background-color: chocolate;
+        }
+
+        .listItems{
+            background-color: darkgray;
+        }
+        h1{
+            color: #f8f1f1 ;
+            background-color: #0a065d;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li id="firstItem"><a href="#">home</a></li>
+
+                <li class="listItems"><a href="#">about us</a></li>
+                <li  class="listItems"><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Class 1 Lab</h1>
+        <p style="color: rgb(7, 190, 16);">
+            what's your name?
+        </p>
+        <p style="color: #f8f1f1; background-color: #a3816a ;">
+            When did you start going to the university?
+        </p>
+        <p style="color: #fde8cd; background-color: #025955 ;">
+            What whas your favourate course in univercity in your first year?
+         </p>
+         <p style="color: #e3d0b9; background-color: #62959c ;">
+            What whas your favourate course in univercity in your second year?
+         </p>
+         <p style="color: #f7f7e8; background-color: #557174 ;">
+            What whas your favourate course in univercity in your third year?
+         </p>
+        
+
+    </main>
+    <footer>
+        &copy; ASAC 2021
+
+    </footer>
+    <script>
+    
+
+        let userName=prompt('what\'s your name?');
+        console.log(userName);
+        let color=prompt('what\'s your favourite color');
+
+        console.log(color);
+
+       
+        let age=prompt('whats your age');
+        console.log(age);
+
+        let classYear = prompt(userName + ' When did you start going to the university?');
+        console.log('the user\'s first year in uni ' + classYear);
+
+        let year1 = prompt(userName + ' What whas your favourate course in univercity in year ' + classYear);
+        console.log('the user\'s favourite course in their first year in uni is' + year1);
+
+        let year2 = prompt(userName + 'What whas your favourate course in univercity in year ' + (classYear+1));
+        console.log('the user\'s favourite course in their second year in uni is' + year2);
+
+        let year3 = prompt(userName + 'What whas your favourate course in univercity in year ' + (classYear+2));
+        console.log('the user\'s favourite course in their third year in uni is' + year3);
+
+        alert('hi there, ' + userName + 'your favourite color is ' +color + 'and ');
+        alert(userName + 'You started going to uni in ' + classYear + ' and your favourate coursefor the first year was ' + year1 + ' and for the second year was ' + year2 + ' and for th third year was ' + year3);
+
+
+
+
+    </script>
+    <script src="app.js"></script>
+
+ 
+</body>
+</html>
